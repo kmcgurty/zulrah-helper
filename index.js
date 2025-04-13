@@ -16,7 +16,7 @@ img.src = "rotations.png";
 
 function scaleCanvas() {
     let scale = 1;
-    scale = canvas.offsetHeight / img.height;
+    scale = window.innerHeight / img.height;
 
     if (img.width * scale > window.innerWidth) {
         scale = window.innerWidth / img.width;
